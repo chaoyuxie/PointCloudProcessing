@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+      C:\Program Files\VTK\include\vtk-8.0;
+      C:\Program Files\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;
+      C:\Program Files\PCL 1.8.1\3rdParty\Eigen\eigen3;
+      C:\Program Files\PCL 1.8.1\3rdParty\FLANN\include;
+      C:\Program Files\PCL 1.8.1\3rdParty\QHull\include;
+      C:\Program Files\PCL 1.8.1\include\pcl-1.8;
+      C:\Program Files\PCL 1.8.1\3rdParty\OpenNI2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      C:\Program Files\VTK\lib;
+      C:\Program Files\PCL 1.8.1\lib;
+      C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib;
+      C:\Program Files\PCL 1.8.1\3rdParty\FLANN\lib;
+      C:\Program Files\PCL 1.8.1\3rdParty\Qhull\lib;
+      C:\Program Files\PCL 1.8.1\3rdParty\OpenNI2\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      pcl_common_debug.lib;
+      pcl_features_debug.lib;
+      pcl_filters_debug.lib;
+      pcl_io_ply_debug.lib;
+      pcl_io_debug.lib;
+      pcl_kdtree_debug.lib;
+      pcl_keypoints_debug.lib;
+      pcl_ml_debug.lib;
+      pcl_octree_debug.lib;
+      pcl_outofcore_debug.lib;
+      pcl_people_debug.lib;
+      pcl_recognition_debug.lib;
+      pcl_registration_debug.lib;
+      pcl_sample_consensus_debug.lib;
+      pcl_search_debug.lib;
+      pcl_segmentation_debug.lib;
+      pcl_stereo_debug.lib;
+      pcl_surface_debug.lib;
+      pcl_tracking_debug.lib;
+      pcl_visualization_debug.lib;
+      
+      libboost_atomic-vc140-mt-gd-1_64.lib;
+      libboost_bzip2-vc140-mt-gd-1_64.lib;
+      libboost_chrono-vc140-mt-gd-1_64.lib;
+      libboost_container-vc140-mt-gd-1_64.lib;
+      libboost_context-vc140-mt-gd-1_64.lib;
+      libboost_coroutine-vc140-mt-gd-1_64.lib;
+      libboost_date_time-vc140-mt-gd-1_64.lib;
+      libboost_exception-vc140-mt-gd-1_64.lib;
+      libboost_fiber-vc140-mt-gd-1_64.lib;
+      libboost_filesystem-vc140-mt-gd-1_64.lib;
+      libboost_graph-vc140-mt-gd-1_64.lib;
+      libboost_graph_parallel-vc140-mt-gd-1_64.lib;
+      libboost_iostreams-vc140-mt-gd-1_64.lib;
+      libboost_locale-vc140-mt-gd-1_64.lib;
+      libboost_log-vc140-mt-gd-1_64.lib;
+      libboost_log_setup-vc140-mt-gd-1_64.lib;
+      libboost_math_c99-vc140-mt-gd-1_64.lib;
+      libboost_math_c99f-vc140-mt-gd-1_64.lib;
+      libboost_math_c99l-vc140-mt-gd-1_64.lib;
+      libboost_math_tr1-vc140-mt-gd-1_64.lib;
+      libboost_math_tr1f-vc140-mt-gd-1_64.lib;
+      libboost_math_tr1l-vc140-mt-gd-1_64.lib;
+      libboost_mpi-vc140-mt-gd-1_64.lib;
+      libboost_numpy3-vc140-mt-gd-1_64.lib;
+      libboost_numpy-vc140-mt-gd-1_64.lib;
+      libboost_prg_exec_monitor-vc140-mt-gd-1_64.lib;
+      libboost_program_options-vc140-mt-gd-1_64.lib;
+      libboost_python3-vc140-mt-gd-1_64.lib;
+      libboost_python-vc140-mt-gd-1_64.lib;
+      libboost_random-vc140-mt-gd-1_64.lib;
+      libboost_regex-vc140-mt-gd-1_64.lib;
+      libboost_serialization-vc140-mt-gd-1_64.lib;
+      libboost_signals-vc140-mt-gd-1_64.lib;
+      libboost_system-vc140-mt-gd-1_64.lib;
+      libboost_test_exec_monitor-vc140-mt-gd-1_64.lib;
+      libboost_thread-vc140-mt-gd-1_64.lib;
+      libboost_timer-vc140-mt-gd-1_64.lib;
+      libboost_type_erasure-vc140-mt-gd-1_64.lib;
+      libboost_unit_test_framework-vc140-mt-gd-1_64.lib;
+      libboost_wave-vc140-mt-gd-1_64.lib;
+      libboost_wserialization-vc140-mt-gd-1_64.lib;
+      libboost_zlib-vc140-mt-gd-1_64.lib;
+      
+      
+      flann-gd.lib;
+      flann_cpp-gd.lib;
+      flann_cpp_s-gd.lib;
+      flann_s-gd.lib;
+      
+      qhull_d.lib;
+      qhullcpp_d.lib;
+      qhullstatic_d.lib;
+      qhullstatic_r_d.lib;
+      qhull_p_d.lib;
+      qhull_r_d.lib;
+      
+      opengl32.lib;
+      
+vtkalglib-8.0_d.lib;
+vtkChartsCore-8.0_d.lib;
+vtkCommonColor-8.0_d.lib;
+vtkCommonComputationalGeometry-8.0_d.lib;
+vtkCommonCore-8.0_d.lib;
+vtkCommonDataModel-8.0_d.lib;
+vtkCommonExecutionModel-8.0_d.lib;
+vtkCommonMath-8.0_d.lib;
+vtkCommonMisc-8.0_d.lib;
+vtkCommonSystem-8.0_d.lib;
+vtkCommonTransforms-8.0_d.lib;
+vtkDICOMParser-8.0_d.lib;
+vtkDomainsChemistry-8.0_d.lib;
+vtkDomainsChemistryOpenGL2-8.0_d.lib;
+vtkexoIIc-8.0_d.lib;
+vtkexpat-8.0_d.lib;
+vtkFiltersAMR-8.0_d.lib;
+vtkFiltersCore-8.0_d.lib;
+vtkFiltersExtraction-8.0_d.lib;
+vtkFiltersFlowPaths-8.0_d.lib;
+vtkFiltersGeneral-8.0_d.lib;
+vtkFiltersGeneric-8.0_d.lib;
+vtkFiltersGeometry-8.0_d.lib;
+vtkFiltersHybrid-8.0_d.lib;
+vtkFiltersHyperTree-8.0_d.lib;
+vtkFiltersImaging-8.0_d.lib;
+vtkFiltersModeling-8.0_d.lib;
+vtkFiltersParallel-8.0_d.lib;
+vtkFiltersParallelImaging-8.0_d.lib;
+vtkFiltersPoints-8.0_d.lib;
+vtkFiltersProgrammable-8.0_d.lib;
+vtkFiltersSelection-8.0_d.lib;
+vtkFiltersSMP-8.0_d.lib;
+vtkFiltersSources-8.0_d.lib;
+vtkFiltersStatistics-8.0_d.lib;
+vtkFiltersTexture-8.0_d.lib;
+vtkFiltersTopology-8.0_d.lib;
+vtkFiltersVerdict-8.0_d.lib;
+vtkfreetype-8.0_d.lib;
+vtkGeovisCore-8.0_d.lib;
+vtkgl2ps-8.0_d.lib;
+vtkglew-8.0_d.lib;
+vtkGUISupportQt-8.0_d.lib;
+vtkGUISupportQtSQL-8.0_d.lib;
+vtkhdf5-8.0_d.lib;
+vtkhdf5_hl-8.0_d.lib;
+vtkImagingColor-8.0_d.lib;
+vtkImagingCore-8.0_d.lib;
+vtkImagingFourier-8.0_d.lib;
+vtkImagingGeneral-8.0_d.lib;
+vtkImagingHybrid-8.0_d.lib;
+vtkImagingMath-8.0_d.lib;
+vtkImagingMorphological-8.0_d.lib;
+vtkImagingSources-8.0_d.lib;
+vtkImagingStatistics-8.0_d.lib;
+vtkImagingStencil-8.0_d.lib;
+vtkInfovisCore-8.0_d.lib;
+vtkInfovisLayout-8.0_d.lib;
+vtkInteractionImage-8.0_d.lib;
+vtkInteractionStyle-8.0_d.lib;
+vtkInteractionWidgets-8.0_d.lib;
+vtkIOAMR-8.0_d.lib;
+vtkIOCore-8.0_d.lib;
+vtkIOEnSight-8.0_d.lib;
+vtkIOExodus-8.0_d.lib;
+vtkIOExport-8.0_d.lib;
+vtkIOExportOpenGL2-8.0_d.lib;
+vtkIOGeometry-8.0_d.lib;
+vtkIOImage-8.0_d.lib;
+vtkIOImport-8.0_d.lib;
+vtkIOInfovis-8.0_d.lib;
+vtkIOLegacy-8.0_d.lib;
+vtkIOLSDyna-8.0_d.lib;
+vtkIOMINC-8.0_d.lib;
+vtkIOMovie-8.0_d.lib;
+vtkIONetCDF-8.0_d.lib;
+vtkIOParallel-8.0_d.lib;
+vtkIOParallelXML-8.0_d.lib;
+vtkIOPLY-8.0_d.lib;
+vtkIOSQL-8.0_d.lib;
+vtkIOTecplotTable-8.0_d.lib;
+vtkIOVideo-8.0_d.lib;
+vtkIOXML-8.0_d.lib;
+vtkIOXMLParser-8.0_d.lib;
+vtkjpeg-8.0_d.lib;
+vtkjsoncpp-8.0_d.lib;
+vtklibharu-8.0_d.lib;
+vtklibxml2-8.0_d.lib;
+vtkLocalExample-8.0_d.lib;
+vtklz4-8.0_d.lib;
+vtkmetaio-8.0_d.lib;
+vtkNetCDF-8.0_d.lib;
+vtknetcdf_c++_d.lib;
+vtkoggtheora-8.0_d.lib;
+vtkParallelCore-8.0_d.lib;
+vtkpng-8.0_d.lib;
+vtkproj4-8.0_d.lib;
+vtkRenderingAnnotation-8.0_d.lib;
+vtkRenderingContext2D-8.0_d.lib;
+vtkRenderingContextOpenGL2-8.0_d.lib;
+vtkRenderingCore-8.0_d.lib;
+vtkRenderingFreeType-8.0_d.lib;
+vtkRenderingGL2PSOpenGL2-8.0_d.lib;
+vtkRenderingImage-8.0_d.lib;
+vtkRenderingLabel-8.0_d.lib;
+vtkRenderingLOD-8.0_d.lib;
+vtkRenderingOpenGL2-8.0_d.lib;
+vtkRenderingQt-8.0_d.lib;
+vtkRenderingVolume-8.0_d.lib;
+vtkRenderingVolumeOpenGL2-8.0_d.lib;
+vtksqlite-8.0_d.lib;
+vtksys-8.0_d.lib;
+vtkTestingGenericBridge-8.0_d.lib;
+vtkTestingIOSQL-8.0_d.lib;
+vtkTestingRendering-8.0_d.lib;
+vtktiff-8.0_d.lib;
+vtkverdict-8.0_d.lib;
+vtkViewsContext2D-8.0_d.lib;
+vtkViewsCore-8.0_d.lib;
+vtkViewsInfovis-8.0_d.lib;
+vtkViewsQt-8.0_d.lib;
+vtkzlib-8.0_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
